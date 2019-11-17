@@ -1,0 +1,31 @@
+---
+title: "C2 Numerical Methods for time -dependent partial differential equations Part  B"
+author: "Milton Nogueira"
+date: "24th May 2017"
+output: pdf_document
+---
+
+
+
+
+
+\newpage
+
+
+# Part C)
+**iv)Computation of the initial condition for the heat equation by using a steepest-descent iteration.**
+
+```{r, tidy=TRUE, eval=TRUE}
+
+U_0 <- function(x){ 
+  #This function computes the initial condition.
+  
+  #Args: 
+  #x : spatial variable.
+  
+  #Returns:
+  #It returns a vector with the evaluated values using the provided IC. 
+  X <- x
+  U_initial_condition <- exp(-100*(x - 0.5)^{2})
+}
+```
